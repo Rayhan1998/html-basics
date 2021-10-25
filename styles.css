@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: Arial;
+}
+
+.homepage {
+  background: url(img/mae-mu-I7A_pHLcQK8-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+h1 {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.list-items {
+  display: flex;
+  color: white;
+
+  padding: 20px;
+}
+
+.list-item {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.list-item:hover {
+  transform: scale(1.5);
+}
+
+.link-item {
+  text-decoration: none;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
